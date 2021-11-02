@@ -1,9 +1,10 @@
-process.stdout.write("hello from spinner1.js... \rheyyy\n");
-const spinner = ["|", "/", "-", "|", "/", "-", "|", "/", "-", "|", "/", "-"];
+process.stdout.write("\rhello prabhu we are loading\n");
+const spinner = "|/-|/-|/-|/-|/-|/-|/-|/-|/-|/-|/-|/-|/-";
 let delay = 100;
-for (let i of spinner) {
+let newline = spinner + "\n";
+for (let i of newline) {
   delay += 200;
   setTimeout(() => {
-    process.stdout.write(`\r${i}   `);
+    process.stdout.write(`\r${i}`);
   }, delay);
 }
